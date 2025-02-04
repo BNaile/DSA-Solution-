@@ -8,9 +8,9 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsoleApp1
 {
-    internal class Program
+    internal class Program1
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Console.WriteLine("Hello, World!");
 

@@ -1241,7 +1241,7 @@ namespace ConsoleApp1
             //}
             #endregion
 
-            #region Sadə Kalkulyator Swich Case Expression ///
+            #region Simple Calculator Switch Case Expression ///
             //  Console.Write("Please enter first number : ");
             //  int FirstDigit =Convert.ToInt32(Console.ReadLine());
 
@@ -1346,7 +1346,7 @@ namespace ConsoleApp1
 
             #endregion
 
-            #region İstifadəçidən bir söz və hərf alın. Əgər daxil etdiyi hərf daxil etdiyi sözlə başlayırsa ekrana 1 yazılsın əks halda 0.
+            #region Get a word and letter from the user. If the entered letter starts with the entered word, write 1 on the screen, otherwise 0.
             //Console.WriteLine("Zehmet olmasa söz elave edin : ");
             //string word= Console.ReadLine();
 
@@ -1449,8 +1449,30 @@ namespace ConsoleApp1
             //    }
 
             //}
+            #region
+            //Console.WriteLine("Please enter a number");
+            //int number = Convert.ToInt32(Console.ReadLine());
 
 
+
+            //for (int i = 1; i <=10; i++)
+            //{
+            //   int result = number * i;
+            //    Console.WriteLine($"enter number: {number} result: {result}");
+            //}
+
+
+            Console.Write("Enter a number : ");
+            int number =Convert.ToInt32(Console.ReadLine());
+
+            int fact = 1;
+
+            for (int i = 1; i <=number; i++)
+            {
+                fact *= i;
+            }
+            Console.WriteLine($"Enter olunmuş reqem: {number}, factorial : {fact}");
+            #endregion
 
 
 
