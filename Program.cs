@@ -1393,6 +1393,7 @@ namespace ConsoleApp1
             //Console.WriteLine(result);
             #endregion
 
+            #region Count in sentences
             //Console.WriteLine("Please enter some sentences : ");
             //string sentences = Console.ReadLine();
 
@@ -1416,9 +1417,9 @@ namespace ConsoleApp1
             //}
             //Console.WriteLine($"Daxil edilen cümledeki söz sayı: {count}");
 
+            #endregion
 
-
-
+            #region Control Name and Password
             //console.writeline( "please enter your name : ");
             //string name = console.readline();
 
@@ -1449,11 +1450,39 @@ namespace ConsoleApp1
             //    }
 
             //}
-            #region
-            //Console.WriteLine("Please enter a number");
+            #endregion
+
+
+
+
+            #region WhILE BASIC EXAMPLE....
+            //int i=1; 
+
+            //while (i<=10)
+            //{
+            //    i++;
+
+            //    Console.WriteLine("Hello World");
+            //}
+
+
+            //Console.Write("Please enter your number : ");
             //int number = Convert.ToInt32(Console.ReadLine());
 
+            //while (number >=0)
+            //{
+            //    Console.WriteLine(number);
+            //    number--;
 
+            //}
+            #endregion
+
+
+
+            #region the square of the number....
+
+            //Console.WriteLine("Please enter a number");
+            //int number = Convert.ToInt32(Console.ReadLine());
 
             //for (int i = 1; i <=10; i++)
             //{
@@ -1461,23 +1490,60 @@ namespace ConsoleApp1
             //    Console.WriteLine($"enter number: {number} result: {result}");
             //}
 
+            ///Factorial 
+            //Console.Write("Enter a number : ");
+            //int number =Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Enter a number : ");
-            int number =Convert.ToInt32(Console.ReadLine());
+            //int fact = 1;
 
-            int fact = 1;
-
-            for (int i = 1; i <=number; i++)
-            {
-                fact *= i;
-            }
-            Console.WriteLine($"Enter olunmuş reqem: {number}, factorial : {fact}");
+            //for (int i = 1; i <=number; i++)
+            //{
+            //    fact *= i;
+            //}
+            //Console.WriteLine($"Enter olunmuş reqem: {number}, factorial : {fact}");
             #endregion
 
+            #region To REVERSE ....
+            //Console.WriteLine("Plsease enter your favorite word : ");
+            //string word=Console.ReadLine();
+
+            //for (int i = word.Length -1; i >=0; i--)
+            //{
+            //    Console.WriteLine(word [i]);
+            //}
+
+            //string text = "Codelandia";
+
+            //Console.WriteLine("Çevrilmiş söz : ");
+            //for (int i = text.Length - 1; i >= 0; i--)
+            //{
+            //    Console.WriteLine(text[i]);
+            //}
+            #endregion
+
+            Console.Write("Please eneter a number : ");
+            string PhoneNumber=Console.ReadLine();
 
 
+            for (int i = 0; i < PhoneNumber.Length; i++)
+            {
+                int count = 1;
+                bool isDuplicate = false;
+                for (int j = i+1; j < PhoneNumber.Length; j++)
+                {
+                    if (PhoneNumber[i] == PhoneNumber[j])
+                    {
+                        count++;
+                        isDuplicate = true;
+                    }
+                }
 
+                if (isDuplicate) {
+                    Console.WriteLine($"Dublicate digit : {PhoneNumber[i]} dublicate count {count}");
+                }
+            }
 
+            
         }
 
 
