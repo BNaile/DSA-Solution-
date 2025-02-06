@@ -1477,8 +1477,6 @@ namespace ConsoleApp1
             //}
             #endregion
 
-
-
             #region the square of the number....
 
             //Console.WriteLine("Please enter a number");
@@ -1521,29 +1519,105 @@ namespace ConsoleApp1
             //}
             #endregion
 
-            Console.Write("Please eneter a number : ");
-            string PhoneNumber=Console.ReadLine();
+            #region Mobile phone number provided. What numbers in this number determine if it is not.
+
+            // Console.Write("Please eneter a number : ");
+            //string PhoneNumber=Console.ReadLine();
 
 
-            for (int i = 0; i < PhoneNumber.Length; i++)
+            //for (int i = 0; i < PhoneNumber.Length; i++)
+            //{
+            //    int count = 1;
+            //    bool isDuplicate = false;
+            //    for (int j = i+1; j < PhoneNumber.Length; j++)
+            //    {
+            //        if (PhoneNumber[i] == PhoneNumber[j])
+            //        {
+            //            count++;
+            //            isDuplicate = true;
+            //        }
+            //    }
+
+            //    if (isDuplicate) {
+            //        Console.WriteLine($"Dublicate digit : {PhoneNumber[i]} dublicate count {count}");
+            //    }
+            //}
+            #endregion
+
+            #region 
+
+            //object[] arr = { 1, 2, 4, 6, "N", 8, "y", "B", 9 };
+            //char ch = Convert.ToChar(Console.ReadLine());
+
+            //if (ch >= 65 && ch <= 90 || ch >= 97 && ch <= 122)
+            //{
+            //    bool found = false;
+            //    for (int i = 0; i < arr.Length; i++)
+            //    {
+            //        if (arr[i] is string) {
+
+            //            string str = (string)arr[i];  
+
+            //            if (str.Length == 1 && str[0] == ch)
+            //            {
+            //                Console.WriteLine(ch);
+            //                 found = false;
+            //                break;  
+            //            }
+            //        }
+
+            //    }
+            //    if (!found)
+            //    {
+            //        Console.WriteLine("Herf tapılmadı");
+            //    }
+
+            //}
+
+            #endregion
+
+            object[] arr = { 1, 2, 4, 6, "N", 8, "y", "B", 9 };
+            char ch = Convert.ToChar(Console.ReadLine());
+
+            for (int i = 0; i < arr.Length; i++)
             {
-                int count = 1;
-                bool isDuplicate = false;
-                for (int j = i+1; j < PhoneNumber.Length; j++)
+                if (arr[i] is string)
                 {
-                    if (PhoneNumber[i] == PhoneNumber[j])
-                    {
-                        count++;
-                        isDuplicate = true;
-                    }
-                }
+                    string s = (string)arr[i];
 
-                if (isDuplicate) {
-                    Console.WriteLine($"Dublicate digit : {PhoneNumber[i]} dublicate count {count}");
+                    if(s.Length == 1)
+                    {
+                        Console.WriteLine(arr[i]);
+                    }
+                   
                 }
             }
+        
 
-            
+            #region Verilmiş massivdən təkrarlanan elementləri silin. 
+
+            //int[] arr = { 1, 2, 3, 5, 6, 8, 3, 99, 45, 22, 1, 108, 99 };//1,3,99
+
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    bool isContinue=false;
+
+            //    for (int j = i + 1; j < arr.Length; j++)
+            //    {
+            //        if (arr[i] == arr[j])
+
+            //          isContinue = true;
+
+            //    }
+            //    if (!isContinue)
+            //    {
+            //        Console.WriteLine(arr[i]);
+            //    }
+            //}
+            #endregion
+
+
+
         }
 
 
