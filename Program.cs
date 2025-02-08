@@ -1475,6 +1475,16 @@ namespace ConsoleApp1
             //    number--;
 
             //}
+
+            //int i = 0;
+            //int result=0;
+            //while (i <=100)
+            //{
+            //    result += i;
+            //    i += 2;
+            //}
+            //Console.WriteLine(result);
+
             #endregion
 
             #region the square of the number....
@@ -1576,23 +1586,24 @@ namespace ConsoleApp1
 
             #endregion
 
-            object[] arr = { 1, 2, 4, 6, "N", 8, "y", "B", 9 };
-            char ch = Convert.ToChar(Console.ReadLine());
+            #region Choose string
+            //object[] arr = { 1, 2, 4, 6, "N", 8, "y", "B", 9 };
 
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i] is string)
-                {
-                    string s = (string)arr[i];
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    if (arr[i] is string)
+            //    {
+            //        string s = (string)arr[i];
 
-                    if(s.Length == 1)
-                    {
-                        Console.WriteLine(arr[i]);
-                    }
-                   
-                }
-            }
-        
+            //        if (s.Length == 1)
+            //        {
+            //            Console.WriteLine(arr[i]);
+            //        }
+
+            //    }
+            //}
+            #endregion#
+
 
             #region Verilmiş massivdən təkrarlanan elementləri silin. 
 
@@ -1616,8 +1627,16 @@ namespace ConsoleApp1
             //}
             #endregion
 
-
-
+            Console.WriteLine("Please enter yor number : ");
+            int number =Convert.ToInt32(Console.ReadLine());
+            int result = 0;
+            while (number > 0)
+            {
+                int lastDigit =number % 10;
+                result += lastDigit;
+                number /= 10;
+            }
+            Console.WriteLine(result);
         }
 
 
