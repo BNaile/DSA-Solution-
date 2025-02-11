@@ -1627,16 +1627,81 @@ namespace ConsoleApp1
             //}
             #endregion
 
-            Console.WriteLine("Please enter yor number : ");
-            int number =Convert.ToInt32(Console.ReadLine());
-            int result = 0;
-            while (number > 0)
-            {
-                int lastDigit =number % 10;
-                result += lastDigit;
-                number /= 10;
-            }
-            Console.WriteLine(result);
+            #region Reverse number
+            //Console.WriteLine("Please enter your number : ");
+            //int number =Convert.ToInt32(Console.ReadLine());
+            //int result = 0;
+            //while (number > 0)
+            //{
+            //    int lastDigit =number % 10;
+            //    result += lastDigit;
+            //    number /= 10;
+            //}
+            //Console.WriteLine(result);
+            #endregion
+
+            #region Rəqəmlərinin cəmi....
+            //Console.WriteLine("Please enter a number :");
+            //int number =Convert.ToInt32(Console.ReadLine());
+
+            //while (number > 0)
+            //{
+            //    int digit = number % 10;
+            //    number /= 10;
+            //    Console.Write(digit);
+
+            //}
+            #endregion
+
+            #region MyRegion
+            //int i = 0, result = 0;
+            //while (i<=100)
+            //{
+            //    if (i % 2 == 1)
+            //        result += i;
+            //    i++;
+
+            //}
+            //Console.WriteLine(result);
+            #endregion
+
+            #region While With Factorial....
+            //Console.WriteLine("Please enter number: ");
+            //int number =Convert.ToInt32(Console.ReadLine());
+
+            //int result = 1,fact=1;
+
+            //while (number > 0)
+            //{
+               
+            //  fact*=number-- ;// bunu o zaman yaza bilərik ki if şərti verilmədikdə 
+            //    //number--;
+               
+            //}
+            //Console.WriteLine(fact);
+
+            #endregion
+
+            #region While DateTime Now...
+
+            //while (true)
+            //{
+            //    if(DateTime.Now.Second%5==0)
+            //        Console.WriteLine(DateTime.Now);
+            //    }
+            #endregion
+
+            #region
+            for (int i = 0; i < 5; i++) {
+                for (int j = 0; j < 3; j++)
+                {
+                    for (int k = 0; k < 2; k++)
+                    {
+                    }
+                }
+               }
+            #endregion  
+
         }
 
 
