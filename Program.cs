@@ -1,6 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using System.ComponentModel;
 using System.ComponentModel.Design;
+using System.Runtime.Serialization.Formatters;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Channels;
 using System.Xml.Linq;
@@ -1673,10 +1674,10 @@ namespace ConsoleApp1
 
             //while (number > 0)
             //{
-               
+
             //  fact*=number-- ;// bunu o zaman yaza bilərik ki if şərti verilmədikdə 
             //    //number--;
-               
+
             //}
             //Console.WriteLine(fact);
 
@@ -1692,16 +1693,96 @@ namespace ConsoleApp1
             #endregion
 
             #region
-            for (int i = 0; i < 5; i++) {
-                for (int j = 0; j < 3; j++)
-                {
-                    for (int k = 0; k < 2; k++)
-                    {
-                    }
-                }
-               }
-            #endregion  
+            //for (int i = 0; i < 5; i++) {
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        for (int k = 0; k < 2; k++)
+            //        {
+            //        }
+            //    }
+            //   }
+            #endregion
 
+            #region Intervyu question
+            //int[] arr = { 1, 2, 9, 3, 7 , 6, 5, 9 };
+            //int maxUnique = int.MinValue;
+
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    int count = 0;
+
+            //    // Təkrarları yoxlayırıq:
+            //    for (int j = 0; j < arr.Length; j++)
+            //    {
+            //        if (arr[i] == arr[j])
+            //            count++;
+            //    }
+
+            //    // Əgər yalnız 1 dəfə təkrarlanıbsa və mövcud ən böyükdən böyükdürsə:
+            //    if (count == 1 && arr[i] > maxUnique)
+            //    {
+            //        maxUnique = arr[i];
+            //    }
+            //}
+
+            //Console.WriteLine("Ən böyük unique rəqəm: " + maxUnique);
+
+            #endregion 
+
+            #region Vurma Cədvəli....
+
+            //Console.WriteLine("1-10 arası bir reqem daxil edin :");
+            //int number = Convert.ToInt32(Console.ReadLine());
+
+            //int total = 1;
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    total = number * i;
+
+            //    Console.WriteLine(total + "=" + number + "*" + i);
+            //}
+
+            //for (int i = 1; i <= 10; i++)
+            //{
+
+            //    for (int j = 1; j <= 10; j++)
+            //    {
+
+            //        Console.WriteLine($"{i}*{j}={i * j}");
+            //    }
+            //}
+
+            #endregion
+
+            #region Numbers Avarage
+
+            //Console.Write("How much digits do you need to enter: ");
+            //int digits=Convert.ToInt32(Console.ReadLine());
+
+            //double total = 0;
+
+            //for (int i = 0; i < digits; i++)
+            //{
+            //    Console.Write($"Please enter number {i + 1}: ");
+            //    double number = Convert.ToInt32(Console.ReadLine());
+
+            //    total += number;               
+            //}
+            //double avarage = (double)total / digits;
+
+            //Console.WriteLine($"Avarage : {avarage}");
+
+            #endregion
+
+            //Console.WriteLine("Please enter your favourite word : ");
+            //string  word=Console.ReadLine();
+
+            //for (int i = word.Length - 1; i >=0; i--)
+            //{
+            //    Console.Write( word[i]);
+            //}
+            //Console.WriteLine(); 
+            
         }
 
 
