@@ -1782,7 +1782,43 @@ namespace ConsoleApp1
             //    Console.Write( word[i]);
             //}
             //Console.WriteLine(); 
+
+
+
+            Console.Write("Please enter first number: ");
+            int firstNum=Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Please enter second number: ");
+            int secondNum=Convert.ToInt32(Console.ReadLine());
+
+            int sum = 0,avr=0,count=0;
             
+            Console.Write("Iki eded arasında olan ededlerin ededi ortası : ");
+            for (int i=firstNum;i<=secondNum; i++)
+            {
+                sum += i;
+                count++;
+                avr=sum/count;
+            }
+            Console.WriteLine(avr);
+
+
+
+
+            //List<Action> actions = new List<Action>();
+            //for (int i = 0; i <= 3; i++)
+            //{
+                
+            //    actions.Add(() =>{Console.WriteLine();});
+            //}
+
+            
+            //foreach (var action in actions)
+            //{
+            //    action();
+            //}
+
+
         }
 
 
