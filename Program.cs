@@ -1,6 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using System.ComponentModel;
 using System.ComponentModel.Design;
+using System.Numerics;
 using System.Runtime.Serialization.Formatters;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Channels;
@@ -1727,7 +1728,7 @@ namespace ConsoleApp1
 
             //Console.WriteLine("Ən böyük unique rəqəm: " + maxUnique);
 
-            #endregion 
+            #endregion
 
             #region Vurma Cədvəli....
 
@@ -1784,40 +1785,98 @@ namespace ConsoleApp1
             //Console.WriteLine(); 
 
 
+            //Console.Write("Please enter first number: ");
+            //int firstNum=Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Please enter first number: ");
-            int firstNum=Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Please enter second number: ");
+            //int secondNum=Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Please enter second number: ");
-            int secondNum=Convert.ToInt32(Console.ReadLine());
+            //int sum = 0,avr=0,count=0;
 
-            int sum = 0,avr=0,count=0;
-            
-            Console.Write("Iki eded arasında olan ededlerin ededi ortası : ");
-            for (int i=firstNum;i<=secondNum; i++)
-            {
-                sum += i;
-                count++;
-                avr=sum/count;
-            }
-            Console.WriteLine(avr);
-
-
+            //Console.Write("Iki eded arasında olan ededlerin ededi ortası : ");
+            //for (int i=firstNum;i<=secondNum; i++)
+            //{
+            //    sum += i;
+            //    count++;
+            //    avr=sum/count;
+            //}
+            //Console.WriteLine(avr);
 
 
             //List<Action> actions = new List<Action>();
             //for (int i = 0; i <= 3; i++)
             //{
-                
+
             //    actions.Add(() =>{Console.WriteLine();});
             //}
 
-            
             //foreach (var action in actions)
             //{
             //    action();
             //}
+            #region Repeat task .....
 
+            //Console.WriteLine("Please enter number : ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+
+            //int total = 0, a = 0;
+
+            //while (number > 0)
+            //{
+            //    a = number % 10;
+            //    total += a;
+            //    number /= 10;
+            //}
+            //Console.WriteLine("Sum of the digit " + total);
+
+            #endregion
+
+            //Console.Write("Please enter one number: ");
+            //string word = Console.ReadLine();    
+
+            //for (int i = word.Length - 1; i >= 0; i--)
+            //{
+            //    Console.WriteLine(word[i]);
+            //}
+
+         //int[] arr = { 1, 2, 3 ,9,4,5,6,7,8,9};
+
+          
+
+         //   for (int i = 0; i < arr.Length; i++)
+         //   {
+         //       bool IsUnique = true;
+
+         //       for (int j = 0; j < arr.Length; j++)
+         //       {
+         //           if (i!=j&&arr[i] == arr[j])
+         //           {
+         //               IsUnique = false;
+         //               break;
+         //           }
+
+         //       }
+
+         //       if (IsUnique)
+         //       {
+         //           Console.WriteLine(arr[i]);
+         //       }
+         //   }
+
+            Console.WriteLine("Please enter number : ");
+            int number =Convert.ToInt32(Console.ReadLine());
+            
+            while (number > 0)
+            {
+               int digit=number%10 ;
+                Console.WriteLine(digit);
+                number /=10;
+
+                for (int i = 0; i < digit; i++) {
+                    bool IsCount=true;
+                    if ()
+
+            }
 
         }
 
