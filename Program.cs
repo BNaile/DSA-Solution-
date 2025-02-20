@@ -1775,6 +1775,7 @@ namespace ConsoleApp1
 
             #endregion
 
+            #region Repeat Task ....
             //Console.WriteLine("Please enter your favourite word : ");
             //string  word=Console.ReadLine();
 
@@ -1783,8 +1784,9 @@ namespace ConsoleApp1
             //    Console.Write( word[i]);
             //}
             //Console.WriteLine(); 
+            #endregion
 
-
+            #region Istənilən iki ədəd arasındakı ədədlərin ədədi ortası
             //Console.Write("Please enter first number: ");
             //int firstNum=Convert.ToInt32(Console.ReadLine());
 
@@ -1801,6 +1803,7 @@ namespace ConsoleApp1
             //    avr=sum/count;
             //}
             //Console.WriteLine(avr);
+            #endregion
 
 
             //List<Action> actions = new List<Action>();
@@ -1831,52 +1834,132 @@ namespace ConsoleApp1
 
             #endregion
 
-            //Console.Write("Please enter one number: ");
-            //string word = Console.ReadLine();    
 
-            //for (int i = word.Length - 1; i >= 0; i--)
+
+
+            #region UNIQUE olmayan obyektlər ....
+            //int[] arr = { 1, 2, 3 ,9,4,5,6,7,8,9};
+
+
+
+            //   for (int i = 0; i < arr.Length; i++)
+            //   {
+            //       bool IsUnique = true;
+
+            //       for (int j = 0; j < arr.Length; j++)
+            //       {
+            //           if (i!=j&&arr[i] == arr[j])
+            //           {
+            //               IsUnique = false;
+            //               break;
+            //           }
+
+            //       }
+
+            //       if (IsUnique)
+            //       {
+            //           Console.WriteLine(arr[i]);
+            //       }
+            //   }
+
+            #endregion
+
+            //Console.WriteLine("Please enter number : ");
+            //string number =Console.ReadLine();
+
+            //bool InCreasing = true;
+
+            //for (int i = 0; i < number.Length; i++)
             //{
-            //    Console.WriteLine(word[i]);
+            //    if (number[i] < number[i] - i)
+            //    {
+            //        InCreasing = false;
+            //        break;
+            //    }
+            //}
+            //if (InCreasing)
+            //{
+            //    Console.WriteLine("Artan sıradadı");
+
+            //}
+            //else 
+            //{
+            //    Console.WriteLine("Artan sırada deyil");
             //}
 
-         //int[] arr = { 1, 2, 3 ,9,4,5,6,7,8,9};
+            //Console.WriteLine( "Please enter a number : ");
+            //string number = Console.ReadLine();
 
-          
+            //List<string> list = new List<string>();
 
-         //   for (int i = 0; i < arr.Length; i++)
-         //   {
-         //       bool IsUnique = true;
+            //foreach (Char item in number)
+            //{
+            //    list.Add(item.ToString());
+            //}
+            //foreach (string item in list)
+            //{
+            //    Console.WriteLine("Reqemler" + " ");
+            //}
 
-         //       for (int j = 0; j < arr.Length; j++)
-         //       {
-         //           if (i!=j&&arr[i] == arr[j])
-         //           {
-         //               IsUnique = false;
-         //               break;
-         //           }
 
-         //       }
+            //for (int i = 0; i < number.Length; i++)
+            //{
+            //    bool Increasing = true;
+            //    for (int j = i + 1; j < number.Length; j++)
+            //    {
+            //        if (number[i] > number[j])
+            //        {
+            //            Console.WriteLine("Artan sıra ile düzülmüşdür" + number[i]);
+            //        }
+            //        else if (number[i] < number[j])
 
-         //       if (IsUnique)
-         //       {
-         //           Console.WriteLine(arr[i]);
-         //       }
-         //   }
+            //        {
+            //            Console.WriteLine("Azalan sıra ilə düzülmüşdür");
+            //            //Increasing = false; break;
+            //        }
 
-            Console.WriteLine("Please enter number : ");
-            int number =Convert.ToInt32(Console.ReadLine());
-            
-            while (number > 0)
+            //    }
+
+            //}
+
+            #region the sum of the digits of the added number
+            //Console.WriteLine( "Please enter integer number : ");
+            //int number =Convert.ToInt32(Console.ReadLine());
+            //int total = 0;
+
+            //while (number > 0)
+            //{
+            //    total += number % 10;
+            //    number /= 10;
+            //}
+            //Console.WriteLine("the sum of the digits of the added number :  "+total);
+
+
+            #endregion
+
+            Console.WriteLine("Please enter integer number : ");
+            string number = Console.ReadLine();
+            char[] digits = number.ToCharArray();
+
+            for (int i = 0; i < digits.Length - 1; i++)
             {
-               int digit=number%10 ;
-                Console.WriteLine(digit);
-                number /=10;
+                for (int j = 0; j < digits.Length - i - 1; j++)
+                {
+                    if (digits[j] < digits[j + 1])
+                    {
+                        (digits[j], digits[j + 1]) = (digits[j + 1], digits[j]);
 
-                for (int i = 0; i < digit; i++) {
-                    bool IsCount=true;
-                    if ()
+                    }
+                }
 
             }
+            Console.WriteLine("Sorted number in descending order:" + new string(digits));
+
+
+
+
+
+
 
         }
 
