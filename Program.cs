@@ -1937,25 +1937,69 @@ namespace ConsoleApp1
 
             #endregion
 
-            Console.WriteLine("Please enter integer number : ");
-            string number = Console.ReadLine();
-            char[] digits = number.ToCharArray();
+            #region  Sorted number in descending order
 
-            for (int i = 0; i < digits.Length - 1; i++)
-            {
-                for (int j = 0; j < digits.Length - i - 1; j++)
-                {
-                    if (digits[j] < digits[j + 1])
-                    {
-                        (digits[j], digits[j + 1]) = (digits[j + 1], digits[j]);
+            //Console.WriteLine("Please enter integer number : ");
+            //string number = Console.ReadLine();
+            //char[] digits = number.ToCharArray();
 
-                    }
-                }
+            //for (int i = 0; i < digits.Length - 1; i++)
+            //{
+            //    for (int j = 0; j < digits.Length - i - 1; j++)
+            //    {
+            //        if (digits[j] < digits[j + 1])
+            //        {
+            //            (digits[j], digits[j + 1]) = (digits[j + 1], digits[j]);//tuple swam c# 7 ilə gəlib
 
-            }
-            Console.WriteLine("Sorted number in descending order:" + new string(digits));
+            //        }
+            //    }
 
+            //}
+            //Console.WriteLine("Sorted number in descending order:" + new string(digits));
 
+            #endregion
+
+            #region
+            //Console.Write("How many digits do you want to enter : ");
+            //int digit =Convert.ToInt32(Console.ReadLine());
+
+            //if (digit <= 0)
+            //{
+            //    Console.WriteLine("The number of digits must be positive.");
+            //    return;
+            //}
+
+            //Console.WriteLine("Please enter first number : ");
+            //int firstNumber = Convert.ToInt32(Console.ReadLine());
+
+            //int max = firstNumber;
+            //int min = firstNumber;
+
+            
+            //for (int i = 0; i < digit; i++)
+            //{
+            //    Console.WriteLine($"Please enter number : {i + 1}");
+            //    int number = Convert.ToInt32(Console.ReadLine());
+
+            //    if (number > max)
+            //    {
+            //        max = number;
+            //    }
+                    
+            //    if(number < min)
+            //    {
+            //        min = number;
+            //    }
+   
+            //}
+            //Console.WriteLine("Max number"+ max);
+            //Console.WriteLine("Min number"+ min);
+            //int difference =max- min;
+            //Console.WriteLine($"Max and min of numbers difference:  {difference}");
+            
+
+            
+            #endregion
 
 
 
