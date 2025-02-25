@@ -1975,7 +1975,7 @@ namespace ConsoleApp1
             //int max = firstNumber;
             //int min = firstNumber;
 
-            
+
             //for (int i = 0; i < digit; i++)
             //{
             //    Console.WriteLine($"Please enter number : {i + 1}");
@@ -1985,62 +1985,111 @@ namespace ConsoleApp1
             //    {
             //        max = number;
             //    }
-                    
+
             //    if(number < min)
             //    {
             //        min = number;
             //    }
-   
+
             //}
             //Console.WriteLine("Max number"+ max);
             //Console.WriteLine("Min number"+ min);
             //int difference =max- min;
             //Console.WriteLine($"Max and min of numbers difference:  {difference}");
-            
 
-            
             #endregion
 
 
+            #region FizzBuzz Ternaryy.....
+            //Console.WriteLine("Please enter integer number : ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = 0; i <= number; i++)
+            //{
+            //    Console.WriteLine(i % 3 == 0 && i % 5 == 0 ? "FizzBuzz" :
+            //        i % 5 == 0 ? "Buzz" :
+            //        i % 3 == 0 ? "Fizz" :
+            //        i.ToString());
+            //}
+            #endregion
+
+            #region 
+
+            //Console.WriteLine("Please add ineteger number: ");
+            //string input = Console.ReadLine();
+
+            //bool[] digits=new bool[10];
+
+            //int count = 0;
+
+            // foreach (char c in input) { 
+            //    if (!digits[c - '0'])
+            //    {
+            //        digits[c - '0'] = true; count++;
+            //    }
+
+            //}
+            //Console.WriteLine($"How many digits have in this number {count}");
+
+            //Console.WriteLine("Please enter integer number: ");
+            //string input = Console.ReadLine();
+
+            //HashSet<char> uniqeNumber = new HashSet<char>(input);
+            //{
+            //    Console.WriteLine($"Please ");
+            //}
+
+            
+                Console.Write("Verilmiş ədəd: ");
+                string input = Console.ReadLine(); // İstifadəçidən ədəd alırıq
+
+                HashSet<char> uniqueDigits = new HashSet<char>(input); // Təkrarlanan rəqəmləri silirik
+
+                Console.WriteLine($"Fərqli rəqəmlərin sayı: {uniqueDigits.Count} ({string.Join(", ", uniqueDigits)})");
+            
+        
 
 
 
-        }
-
-
-        #region Switch Property Patterns ardı
-        //class Students
-        //{
-        //    public string Name { get; set; }
-        //    public string LastName { get; set; }
-        //    public int Age { get; set; }
-
-        //    public  void Deconstruct( out string name , out string lastName)
-        //    {
-        //       name = Name;
-        //        lastName = LastName;
-        //    }
-        //}
         #endregion
-
-        #region Switch Property Patterns Part-2
-
-        //class People
-        //{
-        //    public string Name { get; set; }
-        //    public string Password { get; set; }
-
-        //    public void Deconstruct(out string name, out string password)
-        //    {
-        //        name = Name;
-        //        password = Password;
-
-        //    }
-        //}
-        #endregion
-
-
 
 
     }
+
+
+    #region Switch Property Patterns ardı
+    //class Students
+    //{
+    //    public string Name { get; set; }
+    //    public string LastName { get; set; }
+    //    public int Age { get; set; }
+
+    //    public  void Deconstruct( out string name , out string lastName)
+    //    {
+    //       name = Name;
+    //        lastName = LastName;
+    //    }
+    //}
+    #endregion
+
+    #region Switch Property Patterns Part-2
+
+    //class People
+    //{
+    //    public string Name { get; set; }
+    //    public string Password { get; set; }
+
+    //    public void Deconstruct(out string name, out string password)
+    //    {
+    //        name = Name;
+    //        password = Password;
+
+    //    }
+    //}
+    #endregion
+
+
+
+
+}
 }
