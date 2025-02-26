@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Numerics;
+using System.Runtime.ExceptionServices;
 using System.Runtime.Serialization.Formatters;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Channels;
@@ -1961,7 +1962,7 @@ namespace ConsoleApp1
 
             #region
             //Console.Write("How many digits do you want to enter : ");
-            //int digit =Convert.ToInt32(Console.ReadLine());
+            //int digit = Convert.ToInt32(Console.ReadLine());
 
             //if (digit <= 0)
             //{
@@ -1986,15 +1987,15 @@ namespace ConsoleApp1
             //        max = number;
             //    }
 
-            //    if(number < min)
+            //    if (number < min)
             //    {
             //        min = number;
             //    }
 
             //}
-            //Console.WriteLine("Max number"+ max);
-            //Console.WriteLine("Min number"+ min);
-            //int difference =max- min;
+            //Console.WriteLine("Max number" + max);
+            //Console.WriteLine("Min number" + min);
+            //int difference = max - min;
             //Console.WriteLine($"Max and min of numbers difference:  {difference}");
 
             #endregion
@@ -2013,7 +2014,7 @@ namespace ConsoleApp1
             //}
             #endregion
 
-            #region 
+            #region  Fərqli Rəqəmlərin Sayı
 
             //Console.WriteLine("Please add ineteger number: ");
             //string input = Console.ReadLine();
@@ -2039,57 +2040,125 @@ namespace ConsoleApp1
             //    Console.WriteLine($"Please ");
             //}
 
-            
-                Console.Write("Verilmiş ədəd: ");
-                string input = Console.ReadLine(); // İstifadəçidən ədəd alırıq
 
-                HashSet<char> uniqueDigits = new HashSet<char>(input); // Təkrarlanan rəqəmləri silirik
+            //Console.Write("Verilmiş ədəd: ");
+            //string input = Console.ReadLine(); // İstifadəçidən ədəd alırıq
 
-                Console.WriteLine($"Fərqli rəqəmlərin sayı: {uniqueDigits.Count} ({string.Join(", ", uniqueDigits)})");
-            
-        
+            //HashSet<char> uniqueDigits = new HashSet<char>(input); // Təkrarlanan rəqəmləri silirik
+
+            //Console.WriteLine($"Fərqli rəqəmlərin sayı: {uniqueDigits.Count} ({string.Join(", ", uniqueDigits)})");
 
 
 
+
+
+            #endregion
+
+            #region Max and Min number's difference
+
+            //Console.Write("How many digits want to need : ");
+            //int digits = Convert.ToInt32(Console.ReadLine());
+
+            //if (digits <= 0)
+            //{
+            //    Console.WriteLine("Please enter positive digits");
+            //    return;
+            //}
+            //Console.Write("Please  enter first number :");
+            //int FirstNum = Convert.ToInt32(Console.ReadLine());
+
+            //int max = FirstNum;
+            //int min = FirstNum;
+
+            //for (int i = 1; i < digits; i++)
+            //{
+            //    Console.Write($"Please enter numbeerr:{i + 1} ");
+            //    int number = Convert.ToInt32(Console.ReadLine());
+
+            //    if (number > max)
+            //        max = number;
+            //    if (number < min)
+            //        min = number;
+            //}
+            //Console.WriteLine($"Max number{max}");
+            //Console.WriteLine($"Min number{min}");
+            //int difference = max - min;
+            //Console.WriteLine($"Difference : {difference}");
+            #endregion  
+
+            //Console.WriteLine("Please enter number: ");
+            //int number=Convert.ToInt32(Console.ReadLine());
+
+            //int fact = 1;
+
+            //for (int i = 1; i <=number; i++) 
+            //{
+            //    fact *= i;
+            //}
+            //Console.WriteLine($"Facrial: {fact}");
+
+
+            //Console.WriteLine("Please enter a integer number");
+            //int number=Convert.ToInt32(Console.ReadLine());
+
+            //int total = 0;
+
+            //while (number > 0)
+            //{
+            //    total *= number % 10;
+            //    number /= 10;
+            //}
+            //Console.WriteLine($"Reqemlerinin hasili: {total}");
+
+            Console.WriteLine("Please enter integer number: ");
+            int number =Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < number; i++)
+            {
+                if (number % 1 == 0 && number % number == 0)
+                {
+                    Console.WriteLine("Adding number is Asal's number");
+                }
+               }
+
+
+
+        }
+
+
+        #region Switch Property Patterns ardı
+        //class Students
+        //{
+        //    public string Name { get; set; }
+        //    public string LastName { get; set; }
+        //    public int Age { get; set; }
+
+        //    public  void Deconstruct( out string name , out string lastName)
+        //    {
+        //       name = Name;
+        //        lastName = LastName;
+        //    }
+        //}
+        #endregion
+
+        #region Switch Property Patterns Part-2
+
+        //class People
+        //{
+        //    public string Name { get; set; }
+        //    public string Password { get; set; }
+
+        //    public void Deconstruct(out string name, out string password)
+        //    {
+        //        name = Name;
+        //        password = Password;
+
+        //    }
+        //}
         #endregion
 
 
+
+
     }
-
-
-    #region Switch Property Patterns ardı
-    //class Students
-    //{
-    //    public string Name { get; set; }
-    //    public string LastName { get; set; }
-    //    public int Age { get; set; }
-
-    //    public  void Deconstruct( out string name , out string lastName)
-    //    {
-    //       name = Name;
-    //        lastName = LastName;
-    //    }
-    //}
-    #endregion
-
-    #region Switch Property Patterns Part-2
-
-    //class People
-    //{
-    //    public string Name { get; set; }
-    //    public string Password { get; set; }
-
-    //    public void Deconstruct(out string name, out string password)
-    //    {
-    //        name = Name;
-    //        password = Password;
-
-    //    }
-    //}
-    #endregion
-
-
-
-
-}
 }
