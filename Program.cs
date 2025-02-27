@@ -2084,7 +2084,7 @@ namespace ConsoleApp1
             //Console.WriteLine($"Min number{min}");
             //int difference = max - min;
             //Console.WriteLine($"Difference : {difference}");
-            #endregion  
+            #endregion
 
             //Console.WriteLine("Please enter number: ");
             //int number=Convert.ToInt32(Console.ReadLine());
@@ -2110,17 +2110,84 @@ namespace ConsoleApp1
             //}
             //Console.WriteLine($"Reqemlerinin hasili: {total}");
 
-            Console.WriteLine("Please enter integer number: ");
-            int number =Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Please enter integer number: ");
+            //int number =Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 0; i < number; i++)
-            {
-                if (number % 1 == 0 && number % number == 0)
-                {
-                    Console.WriteLine("Adding number is Asal's number");
-                }
-               }
+            //for (int i = 0; i < number; i++)
+            //{
+            //    if (number % 1 == 0 && number % number == 0)
+            //    {
+            //        Console.WriteLine("Adding number is Asal's number");
+            //    }
+            //   }
 
+            #region While Task
+            //int number =1;  
+            //while (number<=10)
+            //{
+            //    Console.WriteLine("Hello World");
+            //    number++;
+            //}
+
+            //Console.Write("please enter integer number : ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+
+            //while (number > 0)
+            //{
+
+            //    Console.WriteLine(number);
+            //    number--;
+            //}
+
+            //int result = 0;
+            //for (int i = 1; i <= 100; i++)
+            //{
+            //    if (i % 2 != 0)
+            //    {
+            //        result += i;
+            //    }
+
+
+            //}
+            //Console.WriteLine(result);
+
+
+            //int result = 0, number = 1;
+            //while (number <= 100)
+            //{
+            //    result += number;
+            //    number += 2;
+
+            //}
+            //Console.WriteLine(result);
+
+            //Console.WriteLine("Please enter integer number : ");
+            //int number =Convert.ToInt32(Console.ReadLine());
+
+            //int fact = 1;
+
+            //while (number >0) 
+            //{ 
+            //    fact *= number--; 
+            //  //number--;
+            //}
+            //Console.WriteLine(fact);
+
+            //while (true) {
+            //    if (DateTime.Now.Second % 5 == 0)
+            //    {
+            //        Console.WriteLine(DateTime.Now);
+            //    }
+
+            //bool cycle = true;
+
+            //for (; cycle; ) 
+            //{ 
+            //    if (true)
+
+            //        cycle = !cycle;// sonlu dövr
+            //}
+            #endregion
 
 
         }
