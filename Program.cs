@@ -2189,6 +2189,31 @@ namespace ConsoleApp1
             //}
             #endregion
 
+            #region
+            Console.WriteLine("Please enter integer number ");
+            string input= Console.ReadLine();
+            int total = 0;
+            //if (input > 0)
+            //{
+            //    Console.WriteLine("Please enter positivie number");
+            //    return;
+            //}
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input[i] % 2 == 0)
+                {
+                    Console.WriteLine("cüt eded");
+                }
+                if (input[i] % 2 == 1)
+                {
+                    Console.WriteLine("tek eded");
+                }
+            }
+
+            #endregion
+
+
 
         }
 
