@@ -2190,26 +2190,56 @@ namespace ConsoleApp1
             #endregion
 
             #region
-            Console.WriteLine("Please enter integer number ");
-            string input= Console.ReadLine();
-            int total = 0;
-            //if (input > 0)
+            //Console.WriteLine("Please enter integer number ");
+            //int number=Convert.ToInt32(Console.ReadLine());
+            //string numberstr = Convert.ToString(number);
+
+            //int oddSum = 0;
+            //int evenSum= 0;
+
+            //foreach (int c in numberstr) 
             //{
-            //    Console.WriteLine("Please enter positivie number");
-            //    return;
+            //    int digits = c - '0';
+
+            //    if (digits % 2 == 0)
+            //    {
+            //        evenSum += digits;
+            //    }
+            //    else
+            //    {
+            //       oddSum += digits;
+            //    }
+            //}
+            //Console.WriteLine($"Even summer : {evenSum}");
+            //Console.WriteLine($"Odd summer : {oddSum}");
+
+            //Console.WriteLine("Please enter integer number : ");
+            //int number =Convert.ToInt32(Console.ReadLine());
+            //string numberStr=Convert.ToString(number);
+
+            //int sum = 1;
+
+            //foreach(char c in numberStr)
+            //{
+            //    int digit = c - '0';
+            //    sum *= digit;
+            //}
+            //Console.WriteLine($"Verilmiş ededin reqemlerin hasili: {sum}");
+
+            //object[] obj = { "N", 1, 44, 6, "P", "I", 3,"L","A", 4, 8,"P" };
+
+            //for (int i = 0; i < obj.Length; i++) 
+            //{
+            //    //if (obj[i] is int number )
+            //    //{
+            //    //    Console.WriteLine($"Choosing number: {number}");
+            //    //}
+            //    if (obj[i] is string word)
+            //    {
+            //        Console.WriteLine($"Choosing word: {word}");
+            //    }
             //}
 
-            for (int i = 0; i < input.Length; i++)
-            {
-                if (input[i] % 2 == 0)
-                {
-                    Console.WriteLine("cüt eded");
-                }
-                if (input[i] % 2 == 1)
-                {
-                    Console.WriteLine("tek eded");
-                }
-            }
 
             #endregion
 
