@@ -1605,7 +1605,7 @@ namespace ConsoleApp1
 
             //    }
             //}
-            #endregion#
+            #endregion
 
 
             #region Verilmiş massivdən təkrarlanan elementləri silin. 
@@ -2086,6 +2086,8 @@ namespace ConsoleApp1
             //Console.WriteLine($"Difference : {difference}");
             #endregion
 
+
+            #region Repeat Taskss ...
             //Console.WriteLine("Please enter number: ");
             //int number=Convert.ToInt32(Console.ReadLine());
 
@@ -2120,6 +2122,8 @@ namespace ConsoleApp1
             //        Console.WriteLine("Adding number is Asal's number");
             //    }
             //   }
+
+            #endregion
 
             #region While Task
             //int number =1;  
@@ -2242,6 +2246,17 @@ namespace ConsoleApp1
 
 
             #endregion
+
+            #region Switch Expression PATTERN Matching'in Relation Pattern Növü....
+            //int number = 345;
+            //var result =number switch
+            // {
+            //     > 300 and < 346 =>"300 ededinden böyük 346 dan kiçikdi ",
+            //     _ => "Şərtlərə uyğun deyil."
+            // };
+            //Console.WriteLine(result);
+            #endregion
+
 
 
 
