@@ -2258,6 +2258,55 @@ namespace ConsoleApp1
             #endregion
 
 
+            #region Reverse Number
+            //Console.WriteLine("Please enter integer numebr :");
+            //string number =Console.ReadLine();
+
+            //for (int i = number.Length-1; i >=0; i--)
+            //{
+            //    Console.WriteLine(number[i]);
+            //}
+
+            //Console.WriteLine("Please enter integer number : ");
+            //string input =Console.ReadLine();
+
+            //char[]digits =input.ToCharArray();
+
+            //for (int i = 0; i < digits.Length-1; i++) 
+            //{
+            //    for (int j = 0; j < digits.Length - i - 1; j++)
+            //    {
+            //        if (digits[j] < digits[j+1])
+
+            //            (digits[j], digits[j + 1]) =(digits[j+1], digits[j]);
+            //    }
+            //}
+            //Console.WriteLine($"Inputing number reverse : {new string(digits)}");
+
+            //Console.WriteLine("Please enter integer number : ");
+            //int number =Convert.ToInt32(Console.ReadLine());
+            //int total = 0;
+            //while (number > 0)
+            //{
+            //    total += number % 10;
+            //    number /= 10;
+            //}
+            //Console.WriteLine($"Total: {total}");
+
+            //Console.WriteLine("Please enter number :");
+            //int number = Convert.ToInt32(Console.ReadLine());
+
+            //int fact = 1;
+            //for (int i = 1; i <=number; i++)
+            //{
+            //    fact *= i;
+         
+            //}
+            //Console.WriteLine($"Factorial: {fact}");
+
+            Console.WriteLine(""); 
+            #endregion
+
 
 
         }
