@@ -1,6 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using System.ComponentModel;
 using System.ComponentModel.Design;
+using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
 using System.Runtime.ExceptionServices;
 using System.Runtime.Serialization.Formatters;
@@ -2304,10 +2305,25 @@ namespace ConsoleApp1
             //}
             //Console.WriteLine($"Factorial: {fact}");
 
-            Console.WriteLine(""); 
+             
             #endregion
 
+            //bool IsContinue= false;
 
+            //while (!IsContinue)
+            //{
+            //    if (true)
+            //    {
+            //        IsContinue = !IsContinue;
+            //    }
+            //}
+
+           while (true) 
+            {
+                Console.WriteLine("hELLO wORLD");
+            }
+
+           
 
         }
 
