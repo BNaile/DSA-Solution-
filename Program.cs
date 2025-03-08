@@ -2301,11 +2301,11 @@ namespace ConsoleApp1
             //for (int i = 1; i <=number; i++)
             //{
             //    fact *= i;
-         
+
             //}
             //Console.WriteLine($"Factorial: {fact}");
 
-             
+
             #endregion
 
             //bool IsContinue= false;
@@ -2318,10 +2318,17 @@ namespace ConsoleApp1
             //    }
             //}
 
-           while (true) 
-            {
-                Console.WriteLine("hELLO wORLD");
-            }
+            Console.WriteLine("Please enter first number : ");
+            int FirstNum=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter second number : ");
+            int SecondNum=Convert.ToInt32(Console.ReadLine());
+
+           
+
+           int total =FirstNum+SecondNum;
+
+            Console.WriteLine($"total price {total}");
 
            
 
