@@ -2317,20 +2317,60 @@ namespace ConsoleApp1
             //        IsContinue = !IsContinue;
             //    }
             //}
+            #region GençayYıldız  Task 
 
-            Console.WriteLine("Please enter first number : ");
-            int FirstNum=Convert.ToInt32(Console.ReadLine());
+            #region iki ədədin toplanması
+            // Console.WriteLine("Please enter first number : ");
+            // int FirstNum=Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Please enter second number : ");
-            int SecondNum=Convert.ToInt32(Console.ReadLine());
+            // Console.WriteLine("Please enter second number : ");
+            // int SecondNum=Convert.ToInt32(Console.ReadLine());
 
-           
 
-           int total =FirstNum+SecondNum;
 
-            Console.WriteLine($"total price {total}");
+            //int total =FirstNum+SecondNum;
 
-           
+            // Console.WriteLine($"total price {total}");
+            #endregion  
+
+            #region iki ədədin kvadratları cəmi
+            //try
+            //{
+            //    Console.WriteLine("Please enter integer number: ");
+            //    int FirstNum = Convert.ToInt32(Console.ReadLine());
+
+            //    Console.WriteLine("Please enter second int number: ");
+            //    int SecondNum = Convert.ToInt32(Console.ReadLine());
+
+            //    int total=FirstNum*FirstNum + SecondNum*SecondNum;
+            //    Console.WriteLine($"Total price : {total}");
+
+            //}
+            //catch
+            //{
+
+            //    Console.WriteLine("Please enter true input number :))) ");
+            //}
+
+            //Console.WriteLine("Please enter first and second number : ");
+            //Console.WriteLine(Math.Pow(int.Parse(Console.ReadLine()),2) + Math.Pow(int.Parse(Console.ReadLine()),2)); 
+
+            #endregion  
+
+            #region  1-10 a qədər ədədlərin kubu....
+            int total = 0;
+
+            for (int i = 1; i <= 10; i++)
+            {
+                total = i * i * i;
+                Console.WriteLine($"Total:{i}, {total}");
+            }
+            #endregion
+
+
+
+
+            #endregion
 
         }
 
