@@ -2308,6 +2308,8 @@ namespace ConsoleApp1
 
             #endregion
 
+            #region Sonsuz Dövr
+
             //bool IsContinue= false;
 
             //while (!IsContinue)
@@ -2317,6 +2319,8 @@ namespace ConsoleApp1
             //        IsContinue = !IsContinue;
             //    }
             //}
+            #endregion
+
             #region GençayYıldız  Task 
 
             #region iki ədədin toplanması
@@ -2331,7 +2335,7 @@ namespace ConsoleApp1
             //int total =FirstNum+SecondNum;
 
             // Console.WriteLine($"total price {total}");
-            #endregion  
+            #endregion
 
             #region iki ədədin kvadratları cəmi
             //try
@@ -2355,22 +2359,84 @@ namespace ConsoleApp1
             //Console.WriteLine("Please enter first and second number : ");
             //Console.WriteLine(Math.Pow(int.Parse(Console.ReadLine()),2) + Math.Pow(int.Parse(Console.ReadLine()),2)); 
 
-            #endregion  
+            //Console.WriteLine("Please enter a number : ");
+            //Console.WriteLine( Math.Pow(int.Parse(Console.ReadLine()),2 )+ Math.Pow(int.Parse(Console.ReadLine()),2));;
+
+            #endregion
 
             #region  1-10 a qədər ədədlərin kubu....
-            int total = 0;
+            //int total = 0;
 
-            for (int i = 1; i <= 10; i++)
-            {
-                total = i * i * i;
-                Console.WriteLine($"Total:{i}, {total}");
-            }
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    total = i * i * i;
+            //    Console.WriteLine($"Total:{i}, {total}");
+            //}
+            //double total = 0;
+            //int count = 1;
+            //while (count<=10)
+            //{
+            //  total += Math.Pow(count, 3);
+            //  count++;
+            //}
+            //Console.WriteLine("Result : "+ total);
+
+            #endregion
+
+            #region Return example
+            //for (int i = 0; i <100; i++)
+            //{
+            //    if (i == 22)
+            //    {
+            //        return;
+            //    }
+            //    Console.WriteLine(i);
+            //}
+            #endregion
+
+            #region Istifadəçidən n sayda rəqəm al lakin "P" hərfi daxil olunana qədər verilən sayılar toplansın
+
+            //int total = 0;
+            // while (true)
+            //{
+            //    Console.WriteLine("Please enter number : ");
+            //    string input= Console.ReadLine();
+            //    if (input == "P")
+            //    {
+            //        Console.WriteLine("Result" + total);
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        total += int.Parse(input);
+            //    }
+            //}
+
+            #endregion
+
+            #region İstifadəçidən sonsuz sayda ədəd alınır lakin 37 daxil olunanda proqram sonlanılır .
+
+            //while (true) 
+            //{
+            //    Console.WriteLine("Please enter integer number : ");
+            //    int number = Convert.ToInt32(Console.ReadLine());
+
+            //    if (number % 37==0)
+            //    {
+            //        Console.WriteLine("The algorithm has been completed.");
+            //        break;
+            //    }
+
+            //}
+
+            #endregion
+
+            
+      
             #endregion
 
 
 
-
-            #endregion
 
         }
 
