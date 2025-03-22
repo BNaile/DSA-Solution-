@@ -2381,6 +2381,26 @@ namespace ConsoleApp1
             //}
             //Console.WriteLine("Result : "+ total);
 
+            //int total = 0;
+            //for (int i = 0; i <= 10; i++)
+            //{
+            //    total += i * i * i;
+            //}
+            //Console.WriteLine($"Result : {total}");
+
+            //double total = 0;
+
+            //int count = 1;
+
+            //while (true)
+            //{
+            //    //total += Math.Pow(count, 3);
+            //    total += count * count * count;
+            //    if (count == 10) break;
+            //    count++;
+            //}
+            //Console.WriteLine("Result: " + total);
+
             #endregion
 
             #region Return example
@@ -2431,8 +2451,37 @@ namespace ConsoleApp1
 
             #endregion
 
-            
-      
+
+            Console.WriteLine("Please enter phone number : ");
+            string input= Console.ReadLine();
+
+            char[] allDigits ="0123456789".ToCharArray();
+
+            for (int i = 0; i < allDigits.Length; i++) 
+            {
+                bool IsContinue=false;
+
+                for (int j = 0; j < input.Length; j++) 
+                {
+                    if(allDigits[i] == input[j])
+                    {
+                        IsContinue= true;
+                        break;
+                    }
+                }
+                if (!IsContinue)
+                {
+                    Console.Write(allDigits[i] + " ");
+                }
+            }
+           
+
+
+
+
+
+
+
             #endregion
 
 
