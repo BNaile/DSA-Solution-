@@ -2451,37 +2451,54 @@ namespace ConsoleApp1
 
             #endregion
 
+            #region Kurs Task .....
 
-            Console.WriteLine("Please enter phone number : ");
-            string input= Console.ReadLine();
+            //Console.WriteLine("Please enter phone number : ");
+            //string input = Console.ReadLine();
 
-            char[] allDigits ="0123456789".ToCharArray();
+            //char[] allDigits = "0123456789".ToCharArray();
 
-            for (int i = 0; i < allDigits.Length; i++) 
+            //for (int i = 0; i < allDigits.Length; i++)
+            //{
+            //    bool IsContinue = false;
+
+            //    for (int j = 0; j < input.Length; j++)
+            //    {
+            //        if (allDigits[i] == input[j])
+            //        {
+            //            IsContinue = true;
+            //            break;
+            //        }
+            //    }
+            //    if (!IsContinue)
+            //    {
+            //        Console.Write(allDigits[i] + " ");
+            //    }
+            //}
+            #endregion
+
+            #region Sonsuz sayda daxil olunan ədədlərin müsbət olanlarını vurmaq və t hərfi daxil olunanda nəticəsini ekrana yazdırmaq 
+
+            int total = 1;
+            while (true)
             {
-                bool IsContinue=false;
+                Console.WriteLine("Please enter positive number : ");
+                string Input = Console.ReadLine();
 
-                for (int j = 0; j < input.Length; j++) 
+                if (Input == "t")
                 {
-                    if(allDigits[i] == input[j])
-                    {
-                        IsContinue= true;
-                        break;
-                    }
+                    Console.WriteLine($"Total : {total}");
+                    break;
                 }
-                if (!IsContinue)
+                else
                 {
-                    Console.Write(allDigits[i] + " ");
+                    int property = int.Parse(Input);
+                    if (property < 0)
+                        continue;
+
+                    total *= property;
                 }
             }
-           
-
-
-
-
-
-
-
             #endregion
 
 
