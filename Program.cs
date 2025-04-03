@@ -2479,27 +2479,73 @@ namespace ConsoleApp1
 
             #region Sonsuz sayda daxil olunan ədədlərin müsbət olanlarını vurmaq və t hərfi daxil olunanda nəticəsini ekrana yazdırmaq 
 
-            int total = 1;
-            while (true)
-            {
-                Console.WriteLine("Please enter positive number : ");
-                string Input = Console.ReadLine();
+            //int total = 1;
+            //while (true)
+            //{
+            //    Console.WriteLine("Please enter positive number : ");
+            //    string Input = Console.ReadLine();
 
-                if (Input == "t")
-                {
-                    Console.WriteLine($"Total : {total}");
-                    break;
-                }
-                else
-                {
-                    int property = int.Parse(Input);
-                    if (property < 0)
-                        continue;
+            //    if (Input == "t")
+            //    {
+            //        Console.WriteLine($"Total : {total}");
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        int property = int.Parse(Input);
+            //        if (property < 0)
+            //            continue;
 
-                    total *= property;
-                }
-            }
+            //        total += property;
+            //    }
+            //}
             #endregion
+
+            #region 1 il' 1000 arasında 7 nin vuruqları olmayan ədədləri ekrana çap et 
+
+            //for (int i = 1; i <= 1000; i++)
+            //{
+            //    if (i % 7 == 0)
+            //    {
+            //        continue;
+            //    }
+            //    Console.WriteLine(i);
+            //}
+                    Console.WriteLine("Proqram icra olundu. Davam etmək üçün istənilən düyməyə basın...");
+                    Console.ReadKey(); // İstifadəçidən bir düyməyə basmasını gözləyir
+
+            #endregion
+
+            #endregion
+
+            #region Repeat Task
+            //Console.WriteLine("Please added integer number : ");
+            //int number =Convert.ToInt32(Console.ReadLine());
+            //int firstDigit = number;
+            //int lastDigit =number;
+
+            //lastDigit %=10;
+            //while (firstDigit >= 10)
+            //{
+            //    firstDigit/=10;
+            //}
+
+            // Console.WriteLine(firstDigit);
+            //Console.WriteLine(lastDigit);
+
+            //Console.WriteLine("Please enter number :");
+            //int number =Convert.ToInt32(Console.ReadLine());
+
+            //int total = 0;
+            //while (number >0)
+            //{
+            //    total += number % 10;
+            //    number /= 10;
+            //}
+
+            //Console.WriteLine($"Total result : {total}");
+            #endregion
+
 
 
 
