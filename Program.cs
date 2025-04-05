@@ -2511,10 +2511,22 @@ namespace ConsoleApp1
             //    }
             //    Console.WriteLine(i);
             //}
-                    Console.WriteLine("Proqram icra olundu. Davam etmək üçün istənilən düyməyə basın...");
-                    Console.ReadKey(); // İstifadəçidən bir düyməyə basmasını gözləyir
 
-            #endregion
+           
+                 while (true) 
+            {
+                if (Console.ReadKey().KeyChar == 'P')
+                {
+                    Console.WriteLine("Hello World....");
+                    return;
+                }
+                Console.WriteLine(" ");
+               Console.WriteLine("GoodBYE World.....");
+                
+            }
+
+
+
 
             #endregion
 
@@ -2546,7 +2558,7 @@ namespace ConsoleApp1
             //Console.WriteLine($"Total result : {total}");
             #endregion
 
-
+            #endregion
 
 
 
