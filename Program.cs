@@ -2073,7 +2073,7 @@ namespace ConsoleApp1
 
             //for (int i = 1; i < digits; i++)
             //{
-            //    Console.Write($"Please enter numbeerr:{i + 1} ");
+            //    Console.Write($"Please enter number:{i + 1} ");
             //    int number = Convert.ToInt32(Console.ReadLine());
 
             //    if (number > max)
@@ -2512,18 +2512,17 @@ namespace ConsoleApp1
             //    Console.WriteLine(i);
             //}
 
-           
-                 while (true) 
-            {
-                if (Console.ReadKey().KeyChar == 'P')
-                {
-                    Console.WriteLine("Hello World....");
-                    return;
-                }
-                Console.WriteLine(" ");
-               Console.WriteLine("GoodBYE World.....");
-                
-            }
+
+            //while (true) 
+            // {
+            //     if (Console.ReadKey().KeyChar == 'P')
+            //     {
+            //         Console.WriteLine("Hello World....");
+            //         return;
+            //     }
+            //     Console.WriteLine(" ");
+            //    Console.WriteLine("GoodBYE World.....");   
+            // }
 
 
 
@@ -2558,12 +2557,93 @@ namespace ConsoleApp1
             //Console.WriteLine($"Total result : {total}");
             #endregion
 
+            #region GOTO
+
+            //int i =1; 
+
+            //a:
+            //Console.WriteLine(i++);
+            //if (i <= 100)
+            // goto a;
+
+
+            #endregion
+
+            #region iki ədədin kvadratları cəmi
+            //Console.WriteLine("Please enter first number : ");
+            //int numFirst =Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Please enter secund number : ");
+            //int numSecond = Convert.ToInt32(Console.ReadLine());
+
+            //int total = 0;
+
+            //total =numFirst* numFirst + numSecond * numSecond;
+            //Console.WriteLine($"Result: {total}");
+            #endregion
+
+            #region FizzBuz
+            //for (int a = 0; a <=15; a++) {
+            //Console.WriteLine(a %3==0 && a%5==0 ? "FizzBuzz" :
+            //   a % 3==0 ? "Fizz" :
+            //   a % 5==0 ? "Buzz":
+            //   a.ToString());
+            //   }
+
+            //string[] ages=new  string[6] ;
+            //ages[0] = "Nailə";
+            //Console.WriteLine(ages[3]);
+            #endregion
+
+
+            #endregion
+
+
+  
+
+          
+            #region Array 
+            
+            //Array array1 = new int [5];// funksional vasitəsilə
+            //array1.SetValue(1, 0);//0 cı dəyərə 1 i mənimsədirik
+            //array1.SetValue(2,1);
+            //array1.SetValue(3,3);
+
+            //object obj = array1.GetValue(1);// GetValue Arrayın içərisində hansı dəyər tipi olduguna baxmaz ona
+            //                                // görə arraydə olan dəyər objectlə boxing edər eləcə işimizə
+            //                                // yaradığı zaman da unboxing edərik
+            //Console.WriteLine(obj);
+
+
+            int[] array = new int[5];
+            array[0] = 1;
+            array[1] = 2;
+            array[2] = 3;
+            Array arr = array;
+
+            foreach (int i in arr)
+            {
+                Console.WriteLine(i);
+            }
+           
             #endregion
 
 
 
-        }
 
+
+
+
+
+
+
+
+            //for (int i = 0; i < 10; i++)
+            //{
+
+            //}
+
+        }
 
         #region Switch Property Patterns ardı
         //class Students
@@ -2600,4 +2680,4 @@ namespace ConsoleApp1
 
 
     }
-}
+    }
