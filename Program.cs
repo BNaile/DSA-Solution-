@@ -2615,17 +2615,88 @@ namespace ConsoleApp1
             //Console.WriteLine(obj);
 
 
-            int[] array = new int[5];
-            array[0] = 1;
-            array[1] = 2;
-            array[2] = 3;
-            Array arr = array;
+            //int[] array = new int[5];
+            //array[0] = 1;
+            //array[1] = 2;
+            //array[2] = 3;
+            //Array arr = array;
 
-            foreach (int i in arr)
-            {
-                Console.WriteLine(i);
-            }
-           
+            //foreach (int i in arr)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+
+            //int[] arr =  { 1, 2, 3 };
+            //Array array = new int[] { 1, 2, 3,4,5,6,7 };
+
+            //int myArrayLength = array.Length;
+            //Console.WriteLine(myArrayLength);
+            //object b = array.GetValue(3);
+            //Console.WriteLine(b);
+
+          //object[] obj = new object[] { "Nailə", "Vəfa", 3, 'A' };
+
+          //   for (int i = 0; i < obj.Length; i++)
+          //          {
+          //           if (obj[i] is string)
+          //            Console.WriteLine("\"\"");
+          //           else if (obj[i] is int)
+          //            Console.WriteLine(0);
+          //           else if (obj[i] is char)
+          //           Console.WriteLine("\\0");
+          //            else
+          //          Console.WriteLine("null");
+
+
+            //object[] obj = new object[] { "Nailə", "Vəfa", 3, 'A' };
+
+            //foreach (object item in obj)
+            //{
+
+            //    if (item is string s)
+            //    {
+            //        Console.WriteLine($"verilmiş string deyerin uzunlugu: {s.Length}");
+            //    }
+            //    else if (item is int i)
+            //    {
+            //        Console.WriteLine($"verilmiş int deywrin iki qatı: {i * 2}");
+            //    }
+            //    else if (item is char l)
+            //    {
+            //        Console.WriteLine($"verilmiş char deyerin reqem qarşılığı : {(int)l}");
+            //    }
+            //    else 
+            //        Console.WriteLine("Codelandia");
+            
+            //}
+
+            //int[] arr = { 1, 2, 3, 4, 5, 6, };
+
+            //for (int i = arr.Length-1; i >=0; i--)
+            //{
+            //    Console.WriteLine(arr[i]);
+            //}
+
+
+            //char[] arr = {'N','A','I','L','Ə' };
+            
+            //foreach(char item in arr)
+            //{
+            //    int t = (int)item;
+            //    Console.WriteLine(t);
+            //}
+
+            //Array arr  = new[] {1,2,4,5,6,};
+
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    Console.WriteLine(arr.GetValue(i));
+            //}
+
+
+}
+
             #endregion
 
 
@@ -2680,4 +2751,4 @@ namespace ConsoleApp1
 
 
     }
-    }
+    
