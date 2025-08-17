@@ -2599,11 +2599,11 @@ namespace ConsoleApp1
             #endregion
 
 
-  
 
-          
+
+
             #region Array 
-            
+
             //Array array1 = new int [5];// funksional vasitəsilə
             //array1.SetValue(1, 0);//0 cı dəyərə 1 i mənimsədirik
             //array1.SetValue(2,1);
@@ -2635,18 +2635,18 @@ namespace ConsoleApp1
             //object b = array.GetValue(3);
             //Console.WriteLine(b);
 
-          //object[] obj = new object[] { "Nailə", "Vəfa", 3, 'A' };
+            //object[] obj = new object[] { "Nailə", "Vəfa", 3, 'A' };
 
-          //   for (int i = 0; i < obj.Length; i++)
-          //          {
-          //           if (obj[i] is string)
-          //            Console.WriteLine("\"\"");
-          //           else if (obj[i] is int)
-          //            Console.WriteLine(0);
-          //           else if (obj[i] is char)
-          //           Console.WriteLine("\\0");
-          //            else
-          //          Console.WriteLine("null");
+            //   for (int i = 0; i < obj.Length; i++)
+            //          {
+            //           if (obj[i] is string)
+            //            Console.WriteLine("\"\"");
+            //           else if (obj[i] is int)
+            //            Console.WriteLine(0);
+            //           else if (obj[i] is char)
+            //           Console.WriteLine("\\0");
+            //            else
+            //          Console.WriteLine("null");
 
 
             //object[] obj = new object[] { "Nailə", "Vəfa", 3, 'A' };
@@ -2668,7 +2668,7 @@ namespace ConsoleApp1
             //    }
             //    else 
             //        Console.WriteLine("Codelandia");
-            
+
             //}
 
             //int[] arr = { 1, 2, 3, 4, 5, 6, };
@@ -2680,7 +2680,7 @@ namespace ConsoleApp1
 
 
             //char[] arr = {'N','A','I','L','Ə' };
-            
+
             //foreach(char item in arr)
             //{
             //    int t = (int)item;
@@ -2694,25 +2694,78 @@ namespace ConsoleApp1
             //    Console.WriteLine(arr.GetValue(i));
             //}
 
+            //Clear metodu massiv daxilində bütün elementləri silirmi xeyr silmir bu yalnışdır.Halbuki massiv daxilində olan dəyərlərin
+            // dəyər tipi nədirsə default dəyərini  verər (int -> 0, string - null ,-> char -> /0, bool -> false ),.
+            //Array ages = new [] {1, 2, 3, 4, 5};
 
-}
+            //for (int i = 0; i < ages.Length; i++)
+            //{
+            //    Console.WriteLine(ages.GetValue(i));
+            //}
+            //Console.WriteLine("*****************");
+
+            //Array.Clear(ages,0,ages.Length);// clear edəcəyimiz array /
+            //                      // start index yəni neçənci indexdən başladığı /
+            //                      // və count bura index.length yazmaq olar ama o zaman start indexə 0 yazmalıyıq/
+
+            //for (int i = 0; i < ages.Length; i++)
+            //{
+            //    Console.WriteLine(ages.GetValue(i));
+            //}
+
+            //int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            //int min = arr[0];
+            //int max = arr[0];
+
+            //for (int i = 0; i < arr.Length; i++) 
+            //{
+            //    if( arr[i] < min )
+            //        min = arr[i];
+            //    else if( arr[i] > max )
+            //        max = arr[i];
+            //}
+            
+            //Console.WriteLine($"Minimum property : {min}");
+            //Console.WriteLine($"Maximum property : {max}");
+                
+            Console.WriteLine("Please enter your phone number :");
+            int number =Convert.ToInt32(Console.ReadLine());
+
+            int count = 0;
+
+            int[] numbers=new int[] {0,1,2,3,4,5,6,7,8,9};
+            bool value = false;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+             
+                if (numbers[i] != number)
+                {
+                    count++;
+                }
+
+              
+
+            }
+            Console.WriteLine($"How much is repeat your digit : {count}");
+
+            if (count > 0)
+            {
+                Console.WriteLine($"Number {number} exists in the array.");
+            }
+            else
+            {
+                Console.WriteLine($"Number {number} does not exist in the array.");
+            }
+
+
+        }
 
             #endregion
 
 
 
-
-
-
-
-
-
-
-
-            //for (int i = 0; i < 10; i++)
-            //{
-
-            //}
 
         }
 
