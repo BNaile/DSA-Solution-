@@ -6,6 +6,7 @@ using System.Numerics;
 using System.Runtime.ExceptionServices;
 using System.Runtime.Serialization.Formatters;
 using System.Security.Cryptography.X509Certificates;
+using System.Text;
 using System.Threading.Channels;
 using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -2729,38 +2730,134 @@ namespace ConsoleApp1
             //Console.WriteLine($"Minimum property : {min}");
             //Console.WriteLine($"Maximum property : {max}");
                 
-            Console.WriteLine("Please enter your phone number :");
-            int number =Convert.ToInt32(Console.ReadLine());
 
-            int count = 0;
+            //Istifadəçinin daxil etdiyi ədədin massivdə yoxlanışı
+            //Console.WriteLine("Please enter your phone number :");
+            //int number =Convert.ToInt32(Console.ReadLine());
 
-            int[] numbers=new int[] {0,1,2,3,4,5,6,7,8,9};
-            bool value = false;
+            //int count = 0;
 
-            for (int i = 0; i < numbers.Length; i++)
-            {
+            //int[] numbers=new int[] {0,1,2,3,4,5,6,7,8,9};
+            //bool value = false;
+
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
              
-                if (numbers[i] != number)
-                {
-                    count++;
-                }
+            //    if (numbers[i] != number)
+            //    {
+            //        count++;
+            //    }       
 
-              
+            //}
+            //Console.WriteLine($"How much is repeat your digit : {count}");
 
-            }
-            Console.WriteLine($"How much is repeat your digit : {count}");
+            //if (count > 0)
+            //{
+            //    Console.WriteLine($"Number {number} exists in the array.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Number {number} does not exist in the array.");
+            //}
 
-            if (count > 0)
+          // Təkrarlanan ədədlər
+          //int[] digits= { 1, 1, 2, 3, 4, 5, 6, 6,7, 8, 9, 10, 10 };
+
+          //  for (int i = 0; i < digits.Length; i++)
+          //  {
+          //      for (int j = i+1;j<digits.Length;j++)
+          //      {
+          //          if (digits[j] == digits[i])
+          //              Console.WriteLine("Repeat digits "+ digits[i]);
+          //      }
+          //  }
+
+            // Massivdə ən böyük və ən kiçik ədədlərin fərqi
+
+            //int[] numbers = { 1, 2, 3 ,4,5,6,7,8,9,};
+
+            //int min=numbers[0];
+            //int max=numbers[0];
+
+            //for (int i = 0; i < numbers.Length; i++) {
+            //    if (numbers[i]< min)
+            //        min= numbers[i];
+            //    else if (numbers[i]>max)   
+            //        max= numbers[i];
+            // }
+            //Console.WriteLine($"Minimum number: {min}");
+            //Console.WriteLine($"Maximum number: {max}");
+            //Console.WriteLine($"subtraction of two numbers : {max - min}");
+
+            //Ədədlərin kvadratlarının yazılması
+
+            //int[] numbers = { 1, 2, 3 ,4,5,6,7,8,9,};
+
+            //int total =1;
+
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    total = numbers[i] * numbers[i];
+            //    Console.WriteLine("Result : " + total);
+            //}
+
+            //Ilk və sonuncu rəqəmlərin yerinin dəyişməsi
+
+             //int[] numbers = { 1, 2, 3 ,4,5,6,7,8,9,};
+             
+            //for (int i = 0;i < numbers.Length-1; i++)
+            //{
+            //    for (int j = 0; j < numbers.Length - i - 1; j++)
+            //    {
+            //        if (numbers[j] < numbers[j+1])
+            //        {
+            //            int temp = numbers[j];
+            //            numbers[j] = numbers[j+1];
+            //            numbers[j+1] = temp;
+
+
+            //        }
+            //    }
+            //}
+            //Console.WriteLine("Step: " + string.Join(", ", numbers));
+
+            //int temp = numbers[0];
+            //numbers[0] = numbers[numbers.Length-1];
+            //numbers[numbers.Length-1] = temp;
+
+            //for (int i= 0;i<numbers.Length;i++)
+            //{
+            //    Console.Write(numbers[i] + " ");
+            //}
+
+            Console.OutputEncoding = Encoding.UTF8;   
+
+            Console.Write("Daxil ediləcək rəqəmlərin sayı : ");
+            int n =Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("1 ci rəqəm : ");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            int min =number;
+            int max =number;
+            double sum = number;
+
+            for (int i = 1; i < n; i++)
             {
-                Console.WriteLine($"Number {number} exists in the array.");
-            }
-            else
-            {
-                Console.WriteLine($"Number {number} does not exist in the array.");
+                Console.Write("{0} ci rəqəm : ", i+1);
+                number = Convert.ToInt32(Console.ReadLine());
+                if (number < min) min = number;
+                else if (number > max) max = number;
+
+                sum += number;
             }
 
+            Console.WriteLine("****************");
 
-        }
+            Console.WriteLine($"Max number :{max}" );
+            Console.WriteLine($"Min number : {min} ");
+            Console.WriteLine($"Avarage : { sum /n}");
+
 
             #endregion
 
@@ -2803,5 +2900,6 @@ namespace ConsoleApp1
 
 
 
+    }
     }
     
